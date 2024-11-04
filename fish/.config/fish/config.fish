@@ -1,8 +1,6 @@
 if status is-interactive
 	starship init fish | source
-	fish_add_path $HOME/.asdf/installs/php/8.3.12/.composer/vendor/bin
 	fish_add_path $HOME/.local/bin
-	. ~/.asdf/plugins/java/set-java-home.fish
 
 	source ~/.asdf/asdf.fish
 	source ~/.asdf/plugins/golang/set-env.fish
@@ -10,8 +8,9 @@ if status is-interactive
 
 	function reload
 		source $HOME/.config/fish/config.fish
+		tmux source-file ~/.tmux.conf
 	end
   
-  # Initialize session of tmux
+	# Initialize session of tmux
 	if [ -z "$TMUX" ]; tmux; end
 end

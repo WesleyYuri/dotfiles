@@ -13,5 +13,9 @@ if status is-interactive
 	if [ -e /bin/lazygit ]; alias lg="lazygit"; end
 	if [ -z "$TMUX" ]; tmux; end
 
+	function reload
+		source $HOME/.config/fish/config.fish
+	end
+
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 end

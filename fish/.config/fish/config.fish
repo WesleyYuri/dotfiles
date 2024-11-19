@@ -4,6 +4,7 @@ if status is-interactive
 
 	source ~/.asdf/asdf.fish
 	source ~/.asdf/plugins/golang/set-env.fish
+  source ~/.asdf/plugins/java/set-java-home.fish
 	source ~/.config/fish/scripts/alias.fish
 
 	function reload
@@ -14,3 +15,5 @@ if status is-interactive
 	# Initialize session of tmux
 	if [ -z "$TMUX" ]; tmux; end
 end
+
+fish_add_path /home/yuri/.spicetify

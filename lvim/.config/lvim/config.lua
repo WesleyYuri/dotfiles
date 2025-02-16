@@ -9,3 +9,7 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
 lvim.builtin.nvimtree.setup.view.side = "right"
 
+local lspconfig = require("lspconfig")
+lspconfig.html.setup {
+    filetypes = { "html", "php" }, -- Adicione "php" como um tipo de arquivo suportado
+}

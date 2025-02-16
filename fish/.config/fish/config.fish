@@ -12,6 +12,10 @@ if status is-interactive
 		tmux source-file ~/.tmux.conf
 	end
   
+ #  function containers_start
+ #    docker run -d --rm -p 3306:3306 -v mariadb:/var/lib/mysql --name mariadb mariadb
+	# end
+
 	# Initialize session of tmux
 	if [ -z "$TMUX" ]; tmux; end
 end

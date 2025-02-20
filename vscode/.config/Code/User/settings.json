@@ -39,10 +39,11 @@
     "telemetry.telemetryLevel": "off",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    "[blade]": {
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
-    },
     "[php]": {
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+
+    "emmet.includeLanguages": {
+        "blade": "html"
     }
 }

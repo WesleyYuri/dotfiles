@@ -8,6 +8,7 @@ if status is-interactive
 	else
 		set _asdf_shims "$ASDF_DATA_DIR/shims"
 	end
+	. ~/.asdf/plugins/java/set-java-home.fish
 
 	# Do not use fish_add_path (added in Fish 3.2) because it
 	# potentially changes the order of items in PATH
@@ -23,9 +24,9 @@ if status is-interactive
 		tmux source-file ~/.tmux.conf
 	end
   
- #  function containers_start
- #    docker run -d --rm -p 3306:3306 -v mariadb:/var/lib/mysql --name mariadb mariadb
-	# end
+	#  function containers_start
+ 	#    docker run -d --rm -p 3306:3306 -v mariadb:/var/lib/mysql --name mariadb mariadb
+	#  end
 
 	# Initialize session of tmux
 	if [ -z "$TMUX" ]; tmux; end

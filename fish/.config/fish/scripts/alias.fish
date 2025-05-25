@@ -1,8 +1,10 @@
-set -U dev $HOME/software-development
+set -U dev $HOME/development
 set -U dotfiles $HOME/dotfiles
 
 if [ -d $dev ]
     alias dev="cd $dev"
+else
+    mkdir -p $HOME/development
 end
 
 if [ -d $dotfiles ]

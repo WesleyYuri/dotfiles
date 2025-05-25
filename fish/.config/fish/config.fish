@@ -1,6 +1,7 @@
 if status is-interactive
     starship init fish | source
     fish_add_path $HOME/.local/bin
+    source ~/.config/fish/scripts/alias.fish
 
     # ASDF configuration code
     if test -z $ASDF_DATA_DIR
@@ -16,8 +17,6 @@ if status is-interactive
         set -gx --prepend PATH $_asdf_shims
     end
     set --erase _asdf_shims
-
-    source ~/.config/fish/scripts/alias.fish
 
     if [ -e /bin/syncthing ]
         source ~/.config/fish/scripts/syncthing.fish

@@ -1,0 +1,3 @@
+if [[ -e /bin/lsd ]]; then
+  alias ls="lsd"
+fi

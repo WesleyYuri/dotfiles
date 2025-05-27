@@ -3,20 +3,24 @@ HAS_WIDECHARS="false"
 
 # Source manjaro-zsh-configuration
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
+  . /usr/share/zsh/manjaro-zsh-config
 fi
 
 # Use manjaro zsh prompt
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
+  . /usr/share/zsh/manjaro-zsh-prompt
 fi
+
+# Load helpers
+[[ -f ~/.zsh/helpers.zsh ]] && . ~/.zsh/helpers.zsh
+
+# Load programs and config
+[[ -f ~/.zsh/zinit.zsh ]] && . ~/.zsh/zinit.zsh
+
+# Load aliases
+[[ -f ~/.zsh/aliases.zsh ]] && . ~/.zsh/aliases.zsh
 
 # Initialize session of tmux
 if [[ -z "$TMUX" ]]; then
   tmux
 fi
-
-scriptsFolder=~/.zsh
-for script in "$scriptsFolder"/*; do
-  source "$scriptsFolder"/$(basename "$script")
-done

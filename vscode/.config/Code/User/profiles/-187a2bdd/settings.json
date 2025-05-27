@@ -3,7 +3,7 @@
 	"css.validate": false,
 
 	// vi settings
-	"editor.lineNumbers": "relative",
+	// "editor.lineNumbers": "relative",
 
 	// VSCode settings
 	"security.workspace.trust.untrustedFiles": "open",
@@ -26,9 +26,6 @@
 	"prettier.tabWidth": 4,
 	"html.format.wrapAttributes": "auto",
 	"html.format.wrapLineLength": 0,
-	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
-	},
 
 	// Live server settings
 	"liveServer.settings.port": 5000,
@@ -38,6 +35,9 @@
 	"telemetry.telemetryLevel": "off",
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.donotVerifyTags": true,
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
 
 	"emmet.includeLanguages": {
 		"blade": "html"

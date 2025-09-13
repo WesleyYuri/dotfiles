@@ -1,7 +1,9 @@
 # init starship theme
 eval "$(starship init zsh)"
+eval "$(/usr/bin/mise activate zsh)"
 
 source $HOME/.zsh/aliases.zsh
+source $HOME/.zsh/helpers.zsh
 
 # Source all program files
 programs_dir=$HOME/.zsh/programs

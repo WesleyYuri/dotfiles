@@ -1,0 +1,4 @@
+reload ()
+{
+  source $HOME/.zshrc
+}

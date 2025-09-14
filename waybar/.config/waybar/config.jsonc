@@ -6,10 +6,10 @@
   "height": 30, // Waybar height (to be removed for auto height)
   "spacing": 0, // Gaps between modules (4px)
   "modules-left": [
-      "hyprland/workspaces",
+      "hyprland/window",
   ],
   "modules-center": [
-      "hyprland/window"
+      "hyprland/workspaces",
   ],
   "modules-right": [
       "tray",
@@ -19,7 +19,9 @@
       "clock",
       "custom/power"
   ],
-  // Modules configuration
+  "hyprland/window": {
+    "format": "{class}",
+  },
   "hyprland/workspaces": {
       "disable-scroll": true,
       "all-outputs": true,
@@ -68,11 +70,11 @@
   "network": {
       // "interface": "wlp2*", // (Optional) To force the use of this interface
       "format-wifi": "",
-      "format-ethernet": "{ipaddr}/{cidr} ",
-      "tooltip-format": "{ifname} via {gwaddr} ",
-      "format-linked": "{ifname} (No IP) ",
+      "on-click": "kitty --class=Impala -e impala",
+      "format-ethernet": "{ipaddr}/{cidr} ",
+      "tooltip-format": "{ifname} via {gwaddr} ",
+      "format-linked": "{ifname} (No IP) ",
       "format-disconnected": "Disconnected ⚠",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
     "format": "{icon}",

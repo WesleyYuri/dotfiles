@@ -1,18 +1,20 @@
 # env props
 export hyprconfigs="$HOME/.config/hypr"
-export waybar="$HOME/.config/waybar"
+export waybar_dir="$HOME/.config/waybar"
 
 export dotfiles="$HOME/Dotfiles"
 export dev="$HOME/Development"
 
 [[ -e /bin/lsd ]] && alias ls="lsd"
 
+[[ -e /bin/lazydocker ]] && alias ld="lazydocker"
+
 if [[ -d $hyprconfigs ]]; then
   alias hyprconfigs="nvim $hyprconfigs"
 fi
 
-if [[ -d $waybar ]]; then
-  alias waybar="nvim $waybar"
+if [[ -d $waybar_dir ]]; then
+  alias waybarconf="nvim $waybar_dir"
 fi
 
 if [[ -d $dotfiles ]]; then

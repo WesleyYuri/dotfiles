@@ -1,4 +1,4 @@
 # Initialize session of tmux
-if [[ -z "$TMUX" ]]; then
+if  [[ -x /bin/tmux ]] && [[ -z "$TMUX" ]] && [[ $(tty) == /dev/pts/* ]]; then
   tmux attach-session || tmux
 fi

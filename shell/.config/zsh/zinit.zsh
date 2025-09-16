@@ -1,5 +1,5 @@
-export PATH="$PATH:$HOME/.local/share/scripts"
-export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/scripts"
+# export PATH="$PATH:$HOME/.local/share/scripts"
+# export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/scripts"
 
 # init starship theme
 eval "$(starship init zsh)"

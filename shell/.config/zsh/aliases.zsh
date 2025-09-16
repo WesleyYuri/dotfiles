@@ -10,15 +10,15 @@ export dev="$HOME/Development"
 [[ -e /bin/lazydocker ]] && alias ld="lazydocker"
 
 if [[ -d $hypr_dir ]]; then
-  alias hyprconfig="nvim $hypr_dir"
+  alias hyprconfig="cd $hypr_dir && nvim $hypr_dir"
 fi
 
 if [[ -d $waybar_dir ]]; then
-  alias waybarconfig="nvim $waybar_dir"
+  alias waybarconfig="cd $waybar_dir && nvim $waybar_dir"
 fi
 
 if [[ -d $dotfiles_dir ]]; then
-  alias dotconfig="nvim $dotfiles_dir"
+  alias dotconfig="cd $dotfiles_dir && nvim $dotfiles_dir"
 fi
 
 if [[ -d $dev ]]; then

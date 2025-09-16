@@ -6,11 +6,11 @@ eval "$(starship init zsh)"
 
 eval "$(/usr/bin/mise activate zsh)"
 
-source $HOME/.zsh/aliases.zsh
-source $HOME/.zsh/helpers.zsh
+source $HOME/.config/zsh/aliases.zsh
+source $HOME/.config/zsh/helpers.zsh
 
 # Source all program files
-programs_dir=$HOME/.zsh/programs
+programs_dir=$HOME/.config/zsh/programs
 for script in $(find "$programs_dir"/ -type f); do
   . "$script"
 done

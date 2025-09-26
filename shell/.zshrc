@@ -1,3 +1,2 @@
-export ZSHCONFIG="$HOME/.zsh"
+source $HOME/.config/zsh/.zshinit
 
-source $ZSHCONFIG/.zshinit

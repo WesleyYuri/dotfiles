@@ -1,0 +1,19 @@
+export ZSH="$HOME/.oh-my-zsh"
+export ZSHCONFIG="$HOME/.zsh"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+eval "$(starship init zsh)"
+
+reload ()
+{
+  source $HOME/.zshrc
+}
+
+dotfiles_dir="$HOME/.dotfiles"
+
+if [[ -d $dotfiles_dir ]]; then
+  alias dotconfig="cd $dotfiles_dir && nvim ."
+fi

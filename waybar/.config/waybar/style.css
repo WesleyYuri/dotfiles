@@ -1,12 +1,16 @@
 @import "themes/catppuccin/mocha.css";
 
 * {
+  padding: 2px;
   background-color: @transparent;
   color: @text;
   font-family: "JetBrainsMono Nerd Font";
   font-size: 13px;
 }
 
+tooltip {
+  background-color: @base;
+}
 
 #workspaces button {
   all: initial;
@@ -25,6 +29,7 @@
 
 #workspaces,
 #custom-power,
+#custom-spotify,
 #clock,
 #battery,
 #cpu,
@@ -33,6 +38,7 @@
 #temperature,
 #backlight,
 #network,
+#bluetooth,
 #pulseaudio,
 #wireplumber,
 #tray,
@@ -53,3 +59,28 @@
     margin: 0 4px;
 }
 
+#pulseaudio {
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 0 15px 0px 10px;
+}
+
+#network {
+  margin: 0;
+  border-radius: 0;
+  padding: 0 15px 0px 10px;
+}
+
+#bluetooth {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  padding: 0 15px 0px 10px;
+}
+
+#battery {
+  margin: 0;
+  padding: 0;
+  border-radius: 0 5px 5px 0;
+  padding: 0 15px 0px 10px;
+}

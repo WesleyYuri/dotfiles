@@ -5,15 +5,17 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# init theme
 eval "$(starship init zsh)"
 
-reload ()
-{
-  source $HOME/.zshrc
-}
+# Source aliases config
+source $HOME/.config/zsh/aliases.zsh
 
-dotfiles_dir="$HOME/.dotfiles"
+# Source helpers config
+source $HOME/.config/zsh/helpers.zsh
 
-if [[ -d $dotfiles_dir ]]; then
-  alias dotconfig="cd $dotfiles_dir && nvim ."
-fi
+# Source all program files
+programs_dir=$HOME/.config/zsh/programs
+for script in $(find "$programs_dir"/ -type f); do
+  . "$script"
+done

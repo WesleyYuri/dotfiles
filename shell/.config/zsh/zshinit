@@ -1,3 +1,5 @@
+eval "$(/usr/bin/mise activate zsh)"
+
 export ZSH="$HOME/.oh-my-zsh"
 export ZSHCONFIG="$HOME/.zsh"
 

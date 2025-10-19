@@ -1,7 +1,8 @@
 [window]
-opacity = 0.85
+# opacity = 0.85
 blur = true
-dynamic_padding = true
+dynamic_padding = false
+padding = { x = 10, y = 10 }
 
 [font]
 normal = { family = "JetBrains Mono Nerd Font", style = "Regular" }

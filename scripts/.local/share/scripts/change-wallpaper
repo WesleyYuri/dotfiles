@@ -9,7 +9,7 @@ NEW_WP=$(find "$WALLPAPER_DIR" -type d -name ".git" -prune -o -type f ! -name "$
 echo >$HYPRPAPER_CONF
 
 echo "preload = $NEW_WP" >>$HYPRPAPER_CONF
-echo "wallpaper = eDP-1,$NEW_WP" >>$HYPRPAPER_CONF
+echo "wallpaper = ,$NEW_WP" >>$HYPRPAPER_CONF
 echo "splash = false" >>$HYPRPAPER_CONF
 
 killall hyprpaper

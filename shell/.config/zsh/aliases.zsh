@@ -18,3 +18,8 @@ fi
 if [[ -d $waybar_dir ]]; then
   alias waybarconfig="cd $waybar_dir && nvim ."
 fi
+
+if [[ -e /usr/bin/lsd ]]; then
+  alias ls="lsd"
+fi
+

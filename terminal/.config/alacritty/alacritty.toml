@@ -1,15 +1,15 @@
 [general]
-import = ["themes/noctalia.toml"]
+import = ["~/.config/alacritty/themes/noctalia.toml"]
 
 [window]
-# opacity = 0.85
+opacity = 0.85
 blur = true
 dynamic_padding = false
 padding = { x = 10, y = 10 }
 
 [font]
 normal = { family = "JetBrains Mono Nerd Font", style = "Regular" }
-size = 12
+size = 10
 
 [colors.primary]
 background = "#1e1e2e"
